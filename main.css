@@ -221,7 +221,7 @@ button:hover {
 }
 
 .good {
-    background-image: url('/assets/good.png');
+    background-image: url('./assets/good.png');
     width: 80%;
     height: 71%;
     background-size: contain;
@@ -230,7 +230,7 @@ button:hover {
 }
 
 .bad {
-    background-image: url('/assets/bad.png');
+    background-image: url('./assets/bad.png');
     position: absolute;
     width: 72%;
     height: 100%;
@@ -284,7 +284,7 @@ button:hover {
 }
 
 .help {
-    background-image: url('/assets/growth.png');
+    background-image: url('./assets/growth.png');
     padding: 5%;
     background-position: center;
     position: relative;
@@ -315,7 +315,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
     padding-bottom: 14%;
-    background-image: url('/assets/newsBG.png');
+    background-image: url('./assets/newsBG.png');
     background-size: cover;
 }
 
@@ -328,7 +328,7 @@ button:hover {
 }
 
 .box {
-    min-width: 324px;
+    min-width: 384px;
     margin: .5%;
     padding-top: 3%;
     transition: all 1s;
@@ -361,7 +361,7 @@ li:nth-child(1) {
 }
 
 .fb {
-    background-image: url('/assets/smIcons.png');
+    background-image: url('./assets/smIcons.png');
     width: 30px;
     height: 30px;
     background-size: 100px;
@@ -369,7 +369,7 @@ li:nth-child(1) {
     background-position-y: 10%;
 }
 .inst {
-    background-image: url('/assets/smIcons.png');
+    background-image: url('./assets/smIcons.png');
     width: 30px;
     height: 30px;
     background-size: 100px;
@@ -377,7 +377,7 @@ li:nth-child(1) {
     background-position-y: 10%;
 }
 .in {
-    background-image: url('/assets/smIcons.png');
+    background-image: url('./assets/smIcons.png');
     width: 30px;
     height: 30px;
     background-size: 100px;
@@ -385,7 +385,7 @@ li:nth-child(1) {
     background-position-y: 10%;
 }
 .ytb {
-    background-image: url('/assets/smIcons.png');
+    background-image: url('./assets/smIcons.png');
     width: 30px;
     height: 30px;
     background-size: 100px;
