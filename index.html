@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="header">
+        <img src="./assets/menu.png" alt="">
+        <img src="./assets/logo.png" alt="">
+        <img src="./assets/email.png" alt="">
+    </div>
+    <div class="video">
+        <video src="./assets/video.mp4"
+               autoplay="" 
+               loop="" 
+               playsinline="" 
+               muted=""></video>
+        <h1 class="videoH1">Where the cool chain never breaks</h1>
+        <div class="btns">
+            <button class="videoBtn">
+                <img src="./assets/f1.png" class="fIcon">
+                Vessels</button>
+            <button class="videoBtn">
+                <img src="./assets/f2.png" class="fIcon">
+                Processing</button>
+            <button class="videoBtn">
+                <img src="./assets/f3.png" class="fIcon">
+                Farming</button>
+        </div>
+    </div>
+    <div class="cont">
+        <div class="product">
+            <div class="imgWrap">
+                <img src="./assets/product.png" class="productImg">
+                <div class="new">NEW!</div>
+            </div>
+            <div class="productText">
+                <h1 class="productH1">BP-103</h1>
+                <div class="opening">
+                    <div class="">
+                        <div class="oppeningIn">About B-103</div>
+                        <div class="dash">-</div>
+                    </div>
+                    <div class="productDesc">KAPP presents the new OptimICE liquid ice machine designed for small boats. The engine has been designed from scratch with the aim of serving all the needs of small boats in terms of size, performance and accessibility. The width is only 59 cm and therefore fits through all doors. </div>
+                </div>
+                <div class="fullDetails">View full details > </div>
+            </div>
+        </div>
+        <div class="map">
+            <h1 class="span">Optim-ICE® all over the world since 1999</h1>
+            <div class="">
+                <span class="span">Optim-ICE® </span>
+                sales offices are in the USA, Norway, France, Faroe Island, England and Mexico.
+            </div>
+            <button class="blueBtn">See sales offices locations</button>
+        </div>
+        <div class="fish" id="fish">
+            <div class="good">
+                <div class="bad" id="bad">
+                    <div class="moveDiv" id="moveDiv">|||</div>
+                </div>
+                <div class="ices">
+                    <div class="">Fake Ice</div>
+                    <div class="">Optim-ICE</div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="./assets/timeline.png" class="timeline">
+        </div>
+        <div class="help">
+            <h1 class="helpH1">Let us help you <span>Optimice</span> your quality </h1>
+            <button class="helpButton">Contact Us</button>
+        </div>
+        <div class="news">
+            <h1>News</h1>
+            <div class="newsCont">
+                <div class="box">
+                    <img src="./assets/a1.png" class="newsImg">
+                    <div class="text">
+                        Cooling pelagic fish using OptimICE slurry ice machine while landing the catch
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./assets/a2.png" class="newsImg">
+                    <div class="text">
+                        Interview with Frey Friðriksson in Morgunbladid, many opportunities ahead.
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./assets/a3.png" class="newsImg"> 
+                    <div class="text">
+                        KAPP buys RAF ehf
+                        View all</div>
+                </div>
+            </div>
+            <button>View all</button>
+        </div>
+        <div class="sign">
+            <img src="https://optimice.is/cdn/shop/files/Strongest_in_Iceland.png?v=1682011888&width=1380" class="signImg"> 
+        </div>
+        <div class="footer">
+            <ul>
+                <li>Quick links</li>
+                <li>Search</li>
+                <li>Call Us</li>
+                <li>Contact Us</li>
+                <li>News</li>
+                <li>Brochures <br> & Video</li>
+            </ul>
+            <ul>
+                <li>Opening Hours</li>
+                <li><span class="span">Monday - Thursday:</span> <br><br>
+                    08:00 - 16:30 GMT</li>
+                <li><span class="span">Friday:</span> <br><br>
+                    08:00 - 14:45 GMT</li>
+                <li><span class="span">Weekends:</span> <br><br>
+                    Closed</li>
+            </ul>
+            <div class="ulDiv">
+                <ul>
+                    <li>About</li>
+                    <li>KAPP ehf</li>
+                    <li>Turnahvarf 8</li>
+                    <li>+354 587 1300</li>
+                    <li>optimice@optimice.is</li>
+                </ul>
+                <ul>
+                    <li class="second">Follow us</li>
+                    <div class="icons">
+                        <li class="fb"></li>
+                        <li class="inst"></li>
+                        <li class="in"></li>
+                        <li class="ytb"></li>
+                    </div>
+                </ul>
+            </div>
+            <ul>
+                <li>Newsletter</li>
+                <li style="width: 70%;">News and promotions. Directly to your inbox.</li>
+                <li style="position: relative;">
+                    <input type="text" placeholder="Email">
+                    <input type="submit" value=">" class="submit">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const margin = window.innerWidth*.1
+        const bad = document.getElementById('bad')
+        bad.style.width = `${window.innerWidth*.4}px`
+        const moveDiv = document.getElementById('moveDiv')
+        
+        const mouseMove = (e) => { 
+            let x = e.pageX;
+            if (x > window.innerWidth*.2 && x < window.innerWidth*.9) {
+                bad.style.width = x-margin + "px"
+            }
+        }
+
+        const stopResize = () => {
+            window.removeEventListener('mousemove', mouseMove)
+        }
+
+        moveDiv.addEventListener('mousedown', function(e) {
+            e.preventDefault()
+            window.addEventListener('mousemove', mouseMove)
+            window.addEventListener('mouseup', stopResize)
+        })
+
+        //const fish = document.getElementById('fish')
+        
+
+    </script>
+</body>
+</html>
