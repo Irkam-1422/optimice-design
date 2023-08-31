@@ -194,12 +194,13 @@
             }, options);
         } 
 
-        for (const h1 of h1s) {
-            h1.style.transition = 'all 1s'
-            observer('anim').observe(h1)
-        }
+        if (window.innerHeight < window.innerWidth ) {
+            for (const h1 of h1s) {
+                h1.style.transition = 'all 1s'
+                observer('anim').observe(h1)
+            }  
+        } 
         
-
     </script>
 </body>
 </html>
