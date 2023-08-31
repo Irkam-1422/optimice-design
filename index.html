@@ -179,7 +179,25 @@
             window.addEventListener('mouseup', stopResize)
         })
 
-        //const fish = document.getElementById('fish')
+        const h1s = Array.from(document.getElementsByTagName('h1'))
+        let options = { threshold: [0.5] };
+
+        const observer = (clas) => {
+            return new IntersectionObserver((entry) => {
+                entry.forEach(change => {  
+                    if (change.isIntersecting) {
+                    change.target.classList.remove(`${clas}`)
+                    } else {
+                    change.target.classList.add(`${clas}`) 
+                    }
+                });
+            }, options);
+        } 
+
+        for (const h1 of h1s) {
+            h1.style.transition = 'all 1s'
+            observer('anim').observe(h1)
+        }
         
 
     </script>

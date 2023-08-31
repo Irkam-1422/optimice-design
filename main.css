@@ -11,6 +11,11 @@ body {
     overflow-x: hidden;
 }
 
+.anim {
+    transform: rotateX(100deg);
+    opacity: 0;
+}
+
 .cont {
     background: linear-gradient(180deg, #08182c, #132d75);
     color: #fefefe
